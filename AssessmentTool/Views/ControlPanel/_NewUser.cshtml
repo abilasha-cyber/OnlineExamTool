@@ -1,0 +1,116 @@
+﻿@model NewUserViewModel
+
+<div class="row">
+    @Html.Partial("_Loader", "newUserLoader")
+    <div class="col-md-12">
+        <div class="panel panel-default panel-fill">
+            <div class="panel-heading">
+                <h3 class="panel-title">New User</h3>
+            </div>
+            <div class="panel-body">
+                <form id="UserForm">
+                    <div class="form-group">
+                        <label for="Name">User Name</label>
+                        <input type="text" value="@Model.Name" id="Name" name="Name" class="form-control" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" value="@Model.Email" id="Email" name="Email" class="form-control" required="">
+                    </div>
+
+
+                    @*<div class="form-group m-b-20">
+            <div class="col-xs-12">
+                <label for="Username">User Name</label>
+                <input type="text" name="Name" class="form-control" placeholder="Enter User Name" value="@Model.Name">
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group m-b-20">
+            <div class="col-xs-12">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" class="form-control" placeholder="Enter Email" value="@Model.Name">
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+
+                    <button class="btn btn-success waves-effect waves-light w-md" id="newUserButton" type="button">Send Assessment Link</button>
+                    <button class="btn btn-primary waves-effect waves-light w-md" id="goBackButton" type="button">Go Back</button>
+
+                    <div id="UserFormErrorsDiv" style="display:none" class="mt-2 alert alert-icon alert-danger m">
+                        <i class="mdi mdi-alert-circle"></i>
+                        <div id="UserFormErrors"></div>
+                    </div>
+                </form>
+
+                <script>
+                	$(document).ready(function () {
+                        $("#newUserButton").click(function () {
+                			$("#UserFormErrorsDiv").hide();
+
+                            $("#newUserLoader").show();
+                			$.ajax({
+                				type: "POST",
+                				async: true,
+                				url: '@Url.CPNewUser()',
+                                data: {
+                                    Name: $("#Name").val(),
+                                    Email: $("#Email").val(),
+                                }
+                            })
+                			.done(function (data) {
+                                $("#newUserLoader").hide();
+                				if (data.Success)
+                				{
+                                    swal({
+                                        title: 'Assessment Link Sent',
+                                        type: 'success',
+                                        confirmButtonColor: '#4fa7f3'
+                                    });
+                				}
+                				else
+                                {
+                					$("#UserFormErrors").html(data.Errors);
+                					$("#UserFormErrorsDiv").slideDown();
+                					console.log(data.Errors);
+                				}
+                            })
+                			.fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                                $("#newUserLoader").hide();
+                				$("#UserFormErrors").html(errorThrown);
+                				$("#UserFormErrorsDiv").slideDown();
+                				console.log(errorThrown);
+                            });
+                        });
+
+                        $("#goBackButton").click(function () {
+                            $("#newUserLoader").show();
+
+                            $.ajax({
+                                type: "GET",
+                                async: true,
+                                url: '@Url.CPCandidateRegistraion()',
+                            })
+                            .done(function (data) {
+                                $('#candidateregistrationTab').toggle('slide', {
+                                    direction: 'left'
+                                }, 250, function () {
+                                    $("#candidateregistrationTab").html(data);
+                                    $('#candidateregistrationTab').toggle('slide', {
+                                        direction: 'right'
+                                    }, 250);
+                                });
+                            })
+                            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                                $("#newUserLoader").hide();
+                                alert(errorThrown);
+                            });
+                        });
+                	});
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
