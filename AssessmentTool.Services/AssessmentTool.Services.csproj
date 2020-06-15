@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="AssessmentTool.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AssessmentTool\bin\AssessmentTool.Data.dll</HintPath>
+      <HintPath>..\AssessmentTool.Data\bin\Debug\AssessmentTool.Data.dll</HintPath>
     </Reference>
     <Reference Include="AssessmentTool.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

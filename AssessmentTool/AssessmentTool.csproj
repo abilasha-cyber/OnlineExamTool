@@ -65,15 +65,15 @@
     </Reference>
     <Reference Include="AssessmentTool.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AssessmentTool.Data.dll</HintPath>
+      <HintPath>..\AssessmentTool.Data\bin\Debug\AssessmentTool.Data.dll</HintPath>
     </Reference>
     <Reference Include="AssessmentTool.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AssessmentTool.Entities.dll</HintPath>
+      <HintPath>..\AssessmentTool.Entities\bin\Debug\AssessmentTool.Entities.dll</HintPath>
     </Reference>
     <Reference Include="AssessmentTool.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AssessmentTool.Services.dll</HintPath>
+      <HintPath>..\AssessmentTool.Services\obj\Debug\AssessmentTool.Services.dll</HintPath>
     </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
