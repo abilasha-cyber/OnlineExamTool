@@ -8,6 +8,7 @@ namespace AssessmentTool.Data.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using MySql.Data.EntityFramework;
 
     internal sealed class Configuration : DbMigrationsConfiguration<AssessmentTool.Data.AssessmentToolContext>
     {
@@ -15,6 +16,7 @@ namespace AssessmentTool.Data.Migrations
         {
             AutomaticMigrationsEnabled = false;
             ContextKey = "AssessmentTool.Data.AssessmentToolContext";
+            SetSqlGenerator("MySql.Data.MySqlClient", new MySqlMigrationSqlGenerator());
         }
 
         protected override void Seed(AssessmentTool.Data.AssessmentToolContext context)
