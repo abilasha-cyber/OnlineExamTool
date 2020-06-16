@@ -291,69 +291,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\URLHelper.cs" />
-    <Compile Include="Migrations\201807021258434_InitialCreate.cs" />
-    <Compile Include="Migrations\201807021258434_InitialCreate.Designer.cs">
-      <DependentUpon>201807021258434_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807021316596_firstInitMigration.cs" />
-    <Compile Include="Migrations\201807021316596_firstInitMigration.Designer.cs">
-      <DependentUpon>201807021316596_firstInitMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807021623064_QuestionType.cs" />
-    <Compile Include="Migrations\201807021623064_QuestionType.Designer.cs">
-      <DependentUpon>201807021623064_QuestionType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807021825181_Images.cs" />
-    <Compile Include="Migrations\201807021825181_Images.Designer.cs">
-      <DependentUpon>201807021825181_Images.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807021826342_OptionsAsImages.cs" />
-    <Compile Include="Migrations\201807021826342_OptionsAsImages.Designer.cs">
-      <DependentUpon>201807021826342_OptionsAsImages.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807031453309_SeparatingImage.cs" />
-    <Compile Include="Migrations\201807031453309_SeparatingImage.Designer.cs">
-      <DependentUpon>201807031453309_SeparatingImage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807110621128_QuizType.cs" />
-    <Compile Include="Migrations\201807110621128_QuizType.Designer.cs">
-      <DependentUpon>201807110621128_QuizType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111318438_StudentQuizRelationship.cs" />
-    <Compile Include="Migrations\201807111318438_StudentQuizRelationship.Designer.cs">
-      <DependentUpon>201807111318438_StudentQuizRelationship.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111346124_SomeMigration.cs" />
-    <Compile Include="Migrations\201807111346124_SomeMigration.Designer.cs">
-      <DependentUpon>201807111346124_SomeMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111500000_AttemptedOptions.cs" />
-    <Compile Include="Migrations\201807111500000_AttemptedOptions.Designer.cs">
-      <DependentUpon>201807111500000_AttemptedOptions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111522024_foreignKeyRefactoring.cs" />
-    <Compile Include="Migrations\201807111522024_foreignKeyRefactoring.Designer.cs">
-      <DependentUpon>201807111522024_foreignKeyRefactoring.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111540438_nullableforeignKeyRefactoring.cs" />
-    <Compile Include="Migrations\201807111540438_nullableforeignKeyRefactoring.Designer.cs">
-      <DependentUpon>201807111540438_nullableforeignKeyRefactoring.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111912277_OptionPropertyNameSetting.cs" />
-    <Compile Include="Migrations\201807111912277_OptionPropertyNameSetting.Designer.cs">
-      <DependentUpon>201807111912277_OptionPropertyNameSetting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807141218473_QuizIsActive.cs" />
-    <Compile Include="Migrations\201807141218473_QuizIsActive.Designer.cs">
-      <DependentUpon>201807141218473_QuizIsActive.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808091233174_finalUpdates.cs" />
-    <Compile Include="Migrations\201808091233174_finalUpdates.Designer.cs">
-      <DependentUpon>201808091233174_finalUpdates.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202004190915313_QuestionTypes.cs" />
-    <Compile Include="Migrations\202004190915313_QuestionTypes.Designer.cs">
-      <DependentUpon>202004190915313_QuestionTypes.cs</DependentUpon>
+    <Compile Include="Migrations\202006161711520_InitialMigration.cs" />
+    <Compile Include="Migrations\202006161711520_InitialMigration.Designer.cs">
+      <DependentUpon>202006161711520_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -928,53 +868,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807021258434_InitialCreate.resx">
-      <DependentUpon>201807021258434_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807021316596_firstInitMigration.resx">
-      <DependentUpon>201807021316596_firstInitMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807021623064_QuestionType.resx">
-      <DependentUpon>201807021623064_QuestionType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807021825181_Images.resx">
-      <DependentUpon>201807021825181_Images.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807021826342_OptionsAsImages.resx">
-      <DependentUpon>201807021826342_OptionsAsImages.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807031453309_SeparatingImage.resx">
-      <DependentUpon>201807031453309_SeparatingImage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807110621128_QuizType.resx">
-      <DependentUpon>201807110621128_QuizType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111318438_StudentQuizRelationship.resx">
-      <DependentUpon>201807111318438_StudentQuizRelationship.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111346124_SomeMigration.resx">
-      <DependentUpon>201807111346124_SomeMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111500000_AttemptedOptions.resx">
-      <DependentUpon>201807111500000_AttemptedOptions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111522024_foreignKeyRefactoring.resx">
-      <DependentUpon>201807111522024_foreignKeyRefactoring.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111540438_nullableforeignKeyRefactoring.resx">
-      <DependentUpon>201807111540438_nullableforeignKeyRefactoring.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111912277_OptionPropertyNameSetting.resx">
-      <DependentUpon>201807111912277_OptionPropertyNameSetting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807141218473_QuizIsActive.resx">
-      <DependentUpon>201807141218473_QuizIsActive.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808091233174_finalUpdates.resx">
-      <DependentUpon>201808091233174_finalUpdates.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004190915313_QuestionTypes.resx">
-      <DependentUpon>202004190915313_QuestionTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006161711520_InitialMigration.resx">
+      <DependentUpon>202006161711520_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

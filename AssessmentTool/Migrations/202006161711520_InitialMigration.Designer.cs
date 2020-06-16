@@ -7,13 +7,13 @@ namespace AssessmentTool.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AttemptedOptions : IMigrationMetadata
+    public sealed partial class InitialMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AttemptedOptions));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807111500000_AttemptedOptions"; }
+            get { return "202006161711520_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source
